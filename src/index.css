@@ -1,0 +1,87 @@
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+* {
+  font-family: 'Inter', system-ui !important;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 750px;
+  background-color: rgba(146, 199, 166, 0.501);
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+
+
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  margin-bottom: 20px;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 4 / 3;
+  max-height: 270px;
+  overflow-y: scroll;
+
+  
+}
+.div2::-webkit-scrollbar { 
+  display: none; 
+}
+
+.div3 {
+  grid-area: 4 / 1 / 5 / 3;
+  padding-top: 40px;
+}
+
+.div4 {
+  grid-area: 5 / 1 / 7 / 2;
+}
+
+.div5 {
+  grid-area: 5 / 2 / 7 / 3;
+}
+
+
+
+
+.block {
+  display: grid;
+
+}
